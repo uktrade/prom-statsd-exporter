@@ -7,6 +7,20 @@ mappings:
     result: "$3"
     domain: "$4"
     job: "calendar-invite-ingest"
+- match: "*.dnb.search.*"
+  name: "dnb_search_total"
+  labels:
+    app: "$1"
+    source: "dnb"
+    feature: "search"
+    status: "$2"
+- match: "*.dnb.create.*"
+  name: "dnb_create_total"
+  labels:
+    app: "$1"
+    source: "dnb"
+    feature: "create"
+    type: "$2"
 - match: "*.*.*.gunicorn.requests"
   name: "gunicorn_request_total"
   labels:
