@@ -1,5 +1,5 @@
 ---
 applications:
   - docker:
-      image: quay.io/uktrade/prom-statsd-exporter:latest
+      image: gcr.io/sre-docker-registry/prom-statsd-exporter:master  
     health-check-type: process 
