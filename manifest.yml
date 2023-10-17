@@ -1,5 +1,6 @@
 ---
 applications:
+  stack: cflinuxfs4
   - docker:
-      image: gcr.io/sre-docker-registry/prom-statsd-exporter:master  
-    health-check-type: process 
+      image: gcr.io/sre-docker-registry/prom-statsd-exporter:master
+    health-check-type: process
